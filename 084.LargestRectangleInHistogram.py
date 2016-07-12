@@ -5,7 +5,7 @@
  contact me with the above ID on gmail;  中文见 weibo.com/tim9216
  DO  NOT NOT NOT NOT NOT NOT NOT NOT NOT  REMOVE THIS PIECE OF INFORMATION
 
- this programme solves the problem "the largest rectangle in histogram"  on leet code
+ this programme solves the problem  "the largest rectangle in histogram"  on leet code
  http://leetcode.com/problems/largest-rectangle-in-histogram   and
 
  IMPROVES the solution to its extended problem proposed by chen li-ren by TWO DEGREES
@@ -20,7 +20,7 @@ class Solution(object):
 
 '''
  solution to the problem  "the largest rectangle in histogram"  on leet code
- http://www.weibo.com/1915548291/DCEHQ9wa8
+ http://leetcode.com/problems/largest-rectangle-in-histogram
 '''
 def  largest_area( heights ): 
     heights.append(-1)
@@ -50,7 +50,7 @@ def  largest_area( heights ):
 
 '''
  IMPROVED solution to the extended problem proposed by chen li-ren by TWO DEGREES,
- based on the leed code problem "the largest rectangle in histogram"
+ based on the leed code problem  "the largest rectangle in histogram"
  http://www.weibo.com/1915548291/DCEHQ9wa8
 '''
 def  largest_volume( original_heights ):
@@ -186,4 +186,3 @@ print largest_volume( test_case )
  contact me with the above ID on gmail;  中文见 weibo.com/tim9216
  DO  NOT NOT NOT NOT NOT NOT NOT NOT NOT  REMOVE THIS PIECE OF INFORMATION
 '''
-
