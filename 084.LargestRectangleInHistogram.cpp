@@ -5,11 +5,13 @@
  contact me with the above ID on gmail;  中文见 weibo.com/tim9216
  DO  NOT NOT NOT NOT NOT NOT NOT NOT NOT  REMOVE THIS PIECE OF INFORMATION
 
- this programme solves the problem "the largest rectangle in histogram"  on leet code
+ this programme solves the problem  "the largest rectangle in histogram"  on leet code
  http://leetcode.com/problems/largest-rectangle-in-histogram   and 
+
  IMPROVES the solution to the extended problem proposed by chen li-ren by TWO DEGREES
  http://www.weibo.com/1915548291/DCEHQ9wa8
 */
+
 
 #include <algorithm>
 #include <vector>
@@ -28,9 +30,10 @@ public:
 }; //Solution{}
 
 
+
 /*
  solution to the problem  "the largest rectangle in histogram"  on leet code
- http://www.weibo.com/1915548291/DCEHQ9wa8
+ http://leetcode.com/problems/largest-rectangle-in-histogram
 */
 int  Solution ::  largestRectangleArea(  vector<int>&  height  )
 {
@@ -69,9 +72,19 @@ int  Solution ::  largestRectangleArea(  vector<int>&  height  )
 }//Solution ::  largestRectangleArea(1)
 
 
+
+
+/*
+ by  tim9216,  tim9216,  tim9216
+ i am looking for a job in  shang-hai  china;
+ positions in london, UK would be considered as well
+ contact me with the above ID on gmail;  中文见 weibo.com/tim9216
+ DO  NOT NOT NOT NOT NOT NOT NOT NOT NOT  REMOVE THIS PIECE OF INFORMATION
+*/
+
 /*
  IMPROVED solution to the extended problem proposed by chen li-ren by TWO DEGREES
- based on the leed code problem "the largest rectangle in histogram"
+ based on the leed code problem  "the largest rectangle in histogram"
  http://www.weibo.com/1915548291/DCEHQ9wa8
 */
 int  Solution ::  largestCuboidVolume(  vector< vector<int> >&   original_height  )
@@ -130,13 +143,3 @@ int  Solution ::  largestCuboidVolume(  vector< vector<int> >&   original_height
 
     return  max_volume;
 }//Solution :: largestCuboidVolume(1)
-
-
-
-/*
- by  tim9216,  tim9216,  tim9216
- i am looking for a job in  shang-hai  china;
- positions in london, UK would be considered as well
- contact me with the above ID on gmail;  中文见 weibo.com/tim9216
- DO  NOT NOT NOT NOT NOT NOT NOT NOT NOT  REMOVE THIS PIECE OF INFORMATION
-*/
