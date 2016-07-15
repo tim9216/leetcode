@@ -1,4 +1,5 @@
 关于陈利人提出的leetcode问题扩展形式Largest Rectangle In Histogram的算法\源码说明:
+sorry there is no chinese explanation. (chinese is mostly used in shang-hai)
 
 by  tim9216,  tim9216,  tim9216,  求上海IT职位
 
