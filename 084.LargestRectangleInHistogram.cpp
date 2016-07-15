@@ -1,7 +1,10 @@
+#include <iostream>
+using std::cout;
+
 /*
  * by  tim9216,  tim9216,  tim9216
- * i am looking for a job in  shang-hai, china.
- * contact me with the above ID on gmail.  中文见 weibo.com/tim9216
+ * i am looking for a job in  shang-hai, china;
+ * contact me with the above ID on gmail;  中文见 weibo.com/tim9216
  * DO  NOT NOT NOT NOT NOT NOT NOT NOT NOT  REMOVE THIS PIECE OF INFORMATION
  *
  * this programme solves the problem  "the largest rectangle in histogram"  on leet code
@@ -77,10 +80,11 @@ int  Solution ::  largestRectangleArea(  vector<int>&  height  )
 
 
 
+
 /*
  * by  tim9216,  tim9216,  tim9216
- * i am looking for a job in  shang-hai, china.
- * contact me with the above ID on gmail.  中文见 weibo.com/tim9216
+ * i am looking for a job in  shang-hai, china;
+ * contact me with the above ID on gmail;  中文见 weibo.com/tim9216
  * DO  NOT NOT NOT NOT NOT NOT NOT NOT NOT  REMOVE THIS PIECE OF INFORMATION
 
  * IMPROVED solution to the extended problem proposed by chen li-ren by TWO DEGREES
@@ -95,7 +99,7 @@ int  Solution ::  largestCuboidVolume(  vector< vector<int> >&   original_height
     vector< vector<int> >&  height =   length < width  ?
         vector< vector<int> >( width, vector<int>(length) )   :   original_height;
 
-    // %%  3D-histogram MATRIX TRANSITION  %%
+    // 3D-histogram MATRIX TRANSITION to ensure  width < length
     if(  length  <  width  ){
         for(  int y = 0;   y < length;   ++y   ){
             for(   int x = 0;   x < width;   ++x   ){
@@ -106,7 +110,7 @@ int  Solution ::  largestCuboidVolume(  vector< vector<int> >&   original_height
         swap( length, width );
     }//if( < )
 
-    // VALLEY LOOP
+    // VALLEY LOOPS
     // element valley[ y ][ x ][ span ] denotes the low height of array in  ROW y,  COLUMN [ x,  x + span ],  inclusive
     vector<  vector< vector<int> >  >    valley(  length,  vector< vector<int> >( width, vector<int>() )  );
     int  low;
