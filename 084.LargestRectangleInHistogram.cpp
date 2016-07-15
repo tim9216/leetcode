@@ -1,15 +1,14 @@
 /*
- by  tim9216,  tim9216,  tim9216
- i am looking for a job in  shang-hai, china;
- positions in london, UK would be considered as well
- contact me with the above ID on gmail;  中文见 weibo.com/tim9216
- DO  NOT NOT NOT NOT NOT NOT NOT NOT NOT  REMOVE THIS PIECE OF INFORMATION
+ * by  tim9216,  tim9216,  tim9216
+ * i am looking for a job in  shang-hai, china.
+ * contact me with the above ID on gmail.  中文见 weibo.com/tim9216
+ * DO  NOT NOT NOT NOT NOT NOT NOT NOT NOT  REMOVE THIS PIECE OF INFORMATION
+ *
+ * this programme solves the problem  "the largest rectangle in histogram"  on leet code
+ * http://leetcode.com/problems/largest-rectangle-in-histogram   and 
 
- this programme solves the problem  "the largest rectangle in histogram"  on leet code
- http://leetcode.com/problems/largest-rectangle-in-histogram   and 
-
- IMPROVES the solution to the extended problem proposed by chen li-ren by TWO DEGREES
- http://www.weibo.com/1915548291/DCEHQ9wa8
+ * IMPROVES the solution to the extended problem proposed by chen li-ren by TWO DEGREES
+ * http://www.weibo.com/1915548291/DCEHQ9wa8
 */
 
 
@@ -32,9 +31,14 @@ public:
 
 
 /*
- solution to the problem  "the largest rectangle in histogram"  on leet code
- http://leetcode.com/problems/largest-rectangle-in-histogram
-*/
+ * by  tim9216,  tim9216,  tim9216
+ * i am looking for a job in  shang-hai, china;
+ * contact me with the above ID on gmail;  中文见 weibo.com/tim9216
+ * DO  NOT NOT NOT NOT NOT NOT NOT NOT NOT  REMOVE THIS PIECE OF INFORMATION
+
+ * solution to the problem  "the largest rectangle in histogram"  on leet code
+ * http://leetcode.com/problems/largest-rectangle-in-histogram
+ */
 int  Solution ::  largestRectangleArea(  vector<int>&  height  )
 {
     height.push_back( -1 );
@@ -73,20 +77,16 @@ int  Solution ::  largestRectangleArea(  vector<int>&  height  )
 
 
 
-
 /*
- by  tim9216,  tim9216,  tim9216
- i am looking for a job in  shang-hai  china;
- positions in london, UK would be considered as well
- contact me with the above ID on gmail;  中文见 weibo.com/tim9216
- DO  NOT NOT NOT NOT NOT NOT NOT NOT NOT  REMOVE THIS PIECE OF INFORMATION
-*/
+ * by  tim9216,  tim9216,  tim9216
+ * i am looking for a job in  shang-hai, china.
+ * contact me with the above ID on gmail.  中文见 weibo.com/tim9216
+ * DO  NOT NOT NOT NOT NOT NOT NOT NOT NOT  REMOVE THIS PIECE OF INFORMATION
 
-/*
- IMPROVED solution to the extended problem proposed by chen li-ren by TWO DEGREES
- based on the leed code problem  "the largest rectangle in histogram"
- http://www.weibo.com/1915548291/DCEHQ9wa8
-*/
+ * IMPROVED solution to the extended problem proposed by chen li-ren by TWO DEGREES
+ * based on the leed code problem  "the largest rectangle in histogram"
+ * http://www.weibo.com/1915548291/DCEHQ9wa8
+ */
 int  Solution ::  largestCuboidVolume(  vector< vector<int> >&   original_height  )
 {
     int  length =  original_height.size();
@@ -95,7 +95,7 @@ int  Solution ::  largestCuboidVolume(  vector< vector<int> >&   original_height
     vector< vector<int> >&  height =   length < width  ?
         vector< vector<int> >( width, vector<int>(length) )   :   original_height;
 
-    // 3D-histogram matrix transition
+    // %%  3D-histogram MATRIX TRANSITION  %%
     if(  length  <  width  ){
         for(  int y = 0;   y < length;   ++y   ){
             for(   int x = 0;   x < width;   ++x   ){
@@ -106,35 +106,39 @@ int  Solution ::  largestCuboidVolume(  vector< vector<int> >&   original_height
         swap( length, width );
     }//if( < )
 
-    //element valley[ y ][ x ][ x+span ] denotes the low height of array in  ROW y,  COLUMN [ x,  x + span ],  inclusive
+    // VALLEY LOOP
+    // element valley[ y ][ x ][ span ] denotes the low height of array in  ROW y,  COLUMN [ x,  x + span ],  inclusive
     vector<  vector< vector<int> >  >    valley(  length,  vector< vector<int> >( width, vector<int>() )  );
     int  low;
     for(  int y = 0;  y < length;  ++y  ){
         for(  int x = 0;  x < width;  ++x  ){
-            valley[y][x].resize( width-x, height[y][x] );
+            valley[y][x].reserve( width-x );
             low =  height[y][x];
-            for(   int span = 1;   x+span < width;   ++span   ){
+            for(   int span = 0;   x+span < width;   ++span   ){
                 if(  height[y][ x+span ]  <  low  ){
                     low =  height[y][ x+span ];
                 }//if( < )
-                valley[y][x][span] =  low;
+                //valley[y][x][span] =  low;
+                valley[y][x].push_back( low );
             }//for( span )
         }//for(x)
         
     }//for(y)
 
-    // caculate the partial volumn of each row, in range [x, x+span],  as in nested x, span loop
-    // then search maximal row combination along vertical direction,  as in y loop
-    vector< int >   partial_row_volumn( length );
+    // SEARCH VERTICAL HISTOGRAM consists of valleys of aligned ranges in rows
+    // enumerate all the possible  sub-ranges  of each row, in range [x, x+span],  as in nested x, span loop,  then
+    // search along vertical direction for max rectangle in the histogram of valleys combination,  as in y loop
+    vector< int >   valleys_in_aligned_range( length );
     int  volume,  max_volume =  0;
     for(  int x = 0;  x < width;  ++x  ){
         for(  int span = 0;  x + span < width;  ++span  ){
 
             for(  int y = 0;  y < length;  ++y  ){
-                partial_row_volumn[y] =  valley[y][x][span]  *  ( span + 1 );
-            }//for(y_section)
-
-            if(   max_volume   <   (  volume = largestRectangleArea( partial_row_volumn )  )   ){
+                valleys_in_aligned_range[y] =  valley[y][x][span];
+            }//for(y)
+            
+            volume =   ( span + 1 )  *  largestRectangleArea( valleys_in_aligned_range );
+            if(  max_volume < volume  ){
                 max_volume =  volume;
             }//if( max_volume < )
 
