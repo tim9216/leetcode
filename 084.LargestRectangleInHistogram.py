@@ -1,8 +1,7 @@
 '''
  by  tim9216,  tim9216,  tim9216
- i am looking for a job in  shang-hai  china;
- positions in london, UK would be considered as well
- contact me with the above ID on gmail;  中文见 weibo.com/tim9216
+ i am looking for a job in  shang-hai,  china
+ contact me with the above ID on gmail.  中文见 weibo.com/tim9216
  DO  NOT NOT NOT NOT NOT NOT NOT NOT NOT  REMOVE THIS PIECE OF INFORMATION
 
  this programme solves the problem  "the largest rectangle in histogram"  on leet code
@@ -10,6 +9,8 @@
 
  IMPROVES the solution to its extended problem proposed by chen li-ren by TWO DEGREES
  http://www.weibo.com/1915548291/DCEHQ9wa8
+ 
+ SEE CORRESPONDING  C++  SOLUTION FOR BETTER COMMENTS
 '''
 
 class Solution(object):
@@ -49,8 +50,13 @@ def  largest_area( heights ):
 ################################################################################################################
 
 '''
+ by  tim9216,  tim9216,  tim9216
+ i am looking for a job in  shang-hai,  china
+ contact me with the above ID on gmail.  中文见 weibo.com/tim9216
+ DO  NOT NOT NOT NOT NOT NOT NOT NOT NOT  REMOVE THIS PIECE OF INFORMATION
+
  IMPROVED solution to the extended problem proposed by chen li-ren by TWO DEGREES,
- based on the leed code problem  "the largest rectangle in histogram"
+ based on the leed code problem "the largest rectangle in histogram"
  http://www.weibo.com/1915548291/DCEHQ9wa8
 '''
 def  largest_volume( original_heights ):
@@ -59,7 +65,7 @@ def  largest_volume( original_heights ):
     width  =  len( original_heights[0] )
 
 
-    #  ensure  width < length
+    # 3D-histogram MATRIX TRANSITION to ensure width < length
     if  width <= length  :
         h =  original_heights
     else:
@@ -72,29 +78,28 @@ def  largest_volume( original_heights ):
                 h[y].append( original_heights[x][y] )
         width, length =  length, width        # swapping 
 
-
+    # VALLEY LOOPS
     # valley[y][x][span] as  3-dimensional arrays
     # denotes the valley in row y, in range [ x, x+range ], inclusive
-    valley =  []
+    valley =  [  [  0  for  x in  range(width) ]  for y in range(length)   ]
     for  y  in  range( 0, length ):
-        valley.append( [] )
         for  x  in  range( 0, width ):
-            valley[y].append( [] )
+            valley[y][x] =  [  0  for  x0 in  range(width-x) ]
             low = h[y][x]
-            for  span  in  range( 0, width - x ):
+            for  span  in  range( 0, width-x ):
                 if  h[y][ x+span ]  <  low  :
                     low =  h[y][ x+span ]
-                valley[y][x].append( low )
+                valley[y][x][span] =  low
 
-
+    # SEARCH VERTICAL HISTOGRAM consists of valleys of aligned ranges in rows
     max_volume =  0
     for  x  in  range( 0, width ):
         for  span  in  range( 0, width-x ):
             partial_row_vol =  []
             for  y  in  range( 0, length ):
-                partial_row_vol.append(   ( span+1 )  *  valley[y][x][span]   )
+                partial_row_vol.append(  valley[ y ][ x ][ span ]  )
 
-            volume =  largest_area( partial_row_vol )
+            volume =  ( span+1 )  *  largest_area( partial_row_vol )
             if  max_volume  <  volume:
                 max_volume =  volume
 
@@ -135,10 +140,9 @@ variation = [
 
 '''
  by  tim9216,  tim9216,  tim9216
- i am looking for a job in  shang-hai  china;
- positions in london, UK would be considered as well
- contact me with the above ID on gmail;  中文见 weibo.com/tim9216
- DO  NOT NOT NOT NOT NOT  REMOVE THIS PIECE OF INFORMATION
+ i am looking for a job in  shang-hai,  china
+ contact me with the above ID on gmail.  中文见 weibo.com/tim9216
+ DO  NOT NOT NOT NOT NOT NOT NOT NOT NOT  REMOVE THIS PIECE OF INFORMATION
 '''
 
 def  build_case(  width, length,  x_variation, y_variation, x_section_delta, y_section_delta  ):
@@ -176,13 +180,14 @@ def  show_case( heights ):
     print
 
 # buildup 3D histogram width=160, height=200
-test_case =  build_case( 100, 150, variation[0], variation[-3], 1, 1 )
+test_case =  build_case( 320, 400, variation[0], variation[-3], 1, 1 )
 print largest_volume( test_case )
 
 '''
  by  tim9216,  tim9216,  tim9216
- i am looking for a job in  shang-hai  china;
- positions in london, UK would be considered as well
- contact me with the above ID on gmail;  中文见 weibo.com/tim9216
+ i am looking for a job in  shang-hai,  china
+ contact me with the above ID on gmail.  中文见 weibo.com/tim9216
  DO  NOT NOT NOT NOT NOT NOT NOT NOT NOT  REMOVE THIS PIECE OF INFORMATION
+
 '''
+
