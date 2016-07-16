@@ -3,7 +3,7 @@ tim9216给出了其解决算法和源码, 于此说明:
 
 sorry, but no english description. (shang-hai mostly uses chinese)
 
-by  tim9216,  tim9216,  tim9216,  求上海IT职位,  通过姬媚儿联系
+by  tim9216,  tim9216,  tim9216,  求上海挨踢职位,  通过姬媚儿联系
 
 leetcode原题"the largest rectangle in histogram":
 http://leetcode.com/problems/largest-rectangle-in-histogram
@@ -66,6 +66,7 @@ http://www.weibo.com/1915548291/DCEHQ9wa8
 再乘以对应局部区域的宽度[也是始末组合的宽度], 即得最大长方体体积.
 以上, w为三维柱状图底面宽度width, l为长度length.
 
+by  tim9216,  tim9216,  tim9216,  求上海挨踢职位,  通过姬媚儿联系
 
 下面, 代码分析, 以C++为例: 接口是largestCuboidVolume, 
 接受基于双重vector的矩阵origin_height, 元素值为三维柱状图高度.
@@ -102,4 +103,4 @@ low与新纳入的元素[高度值]比较, 维持最低值, 再赋予v[y][x][spa
 各个体积逐一比较取最大, 全局最大脱颖而出, 至此, 最终答案手到擒來.
 
 
-by  tim9216,  tim9216,  tim9216,  求上海IT职位, 通过姬媚儿联系
+by  tim9216,  tim9216,  tim9216,  求上海挨踢职位,  通过姬媚儿联系
