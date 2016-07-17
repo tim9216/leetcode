@@ -9,8 +9,6 @@
 
  IMPROVES the solution to its extended problem proposed by chen li-ren by TWO DEGREES
  http://www.weibo.com/1915548291/DCEHQ9wa8
- 
- SEE CORRESPONDING  C++  SOLUTION FOR BETTER COMMENTS
 '''
 
 class Solution(object):
@@ -74,7 +72,6 @@ def  largest_volume( original_heights ):
         for y in range(0, width):
             h.append( [] )
             for x in range(0, length):
-                low =  h[y][x]
                 h[y].append( original_heights[x][y] )
         width, length =  length, width        # swapping 
 
@@ -180,7 +177,7 @@ def  show_case( heights ):
     print
 
 # buildup 3D histogram width=160, height=200
-test_case =  build_case( 320, 400, variation[0], variation[-3], 1, 1 )
+test_case =  build_case( 10, 20, variation[0], variation[-3], 1, 1 )
 print largest_volume( test_case )
 
 '''
