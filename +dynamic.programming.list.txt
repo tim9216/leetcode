@@ -1,0 +1,51 @@
+#ranged from the lowest acceptance to highest
+
+91	Decode Ways	17.9%	Medium
+44	Wildcard Matching	18.0%	Hard
+140	Word Break II	20.5%	Hard
+174	Dungeon Game	21.6%	Hard
+321	Create Maximum Number	22.2%	Hard
+132	Palindrome Partitioning II	22.4%	Hard
+304	Range Sum Query 2D - Immutable	22.4%	Medium
+10	Regular Expression Matching	22.5%	Hard
+32	Longest Valid Parentheses	22.7%	Hard
+152	Maximum Product Subarray	22.9%	Medium
+188	Best Time to Buy and Sell Stock IV	23.0%	Hard
+97	Interleaving String	23.0%	Hard
+85	Maximal Rectangle	24.0%	Hard
+221	Maximal Square	24.5%	Medium
+303	Range Sum Query - Immutable	25.4%	Easy
+322	Coin Change	25.4%	Medium
+123	Best Time to Buy and Sell Stock III	27.1%	Hard
+87	Scramble String	27.2%	Hard
+375	Guess Number Higher or Lower II	28.1%	Medium
+354	Russian Doll Envelopes	28.9%	Hard
+72	Edit Distance	29.3%	Hard
+95	Unique Binary Search Trees II	29.4%	Medium
+363	Max Sum of Rectangle No Larger Than K	29.4%	Hard
+115	Distinct Subsequences	29.4%	Hard
+264	Ugly Number II	29.5%	Medium
+63	Unique Paths II	29.9%	Medium
+368	Largest Divisible Subset	30.6%	Medium
+120	Triangle	31.0%	Medium
+213	House Robber II	31.6%	Medium
+276	Paint Fence 	32.0%	Easy
+279	Perfect Squares	33.7%	Medium
+361	Bomb Enemy 	34.1%	Medium
+198	House Robber	35.5%	Easy
+300	Longest Increasing Subsequence	35.5%	Medium
+64	Minimum Path Sum	35.7%	Medium
+376	Wiggle Subsequence	36.0%	Medium
+265	Paint House II 	36.0%	Hard
+351	Android Unlock Patterns 	36.8%	Medium
+121	Best Time to Buy and Sell Stock	36.8%	Easy
+62	Unique Paths	37.2%	Medium
+53	Maximum Subarray	37.2%	Medium
+70	Climbing Stairs	37.4%	Easy
+309	Best Time to Buy and Sell Stock with Cooldown	37.9%	Medium
+96	Unique Binary Search Trees	38.2%	Medium
+312	Burst Balloons	39.0%	Hard
+343	Integer Break	42.5%	Medium
+357	Count Numbers with Unique Digits	42.7%	Medium
+256	Paint House 	43.6%	Medium
+338	Counting Bits	57.5%	Medium
