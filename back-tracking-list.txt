@@ -1,0 +1,34 @@
+leetcode problem lists requires backtracking
+ordered by acceptance rate from low to high
+
+126	Word Ladder II	13.7%	Hard
+44	Wildcard Matching	18.0%	Hard
+211	Add and Search Word - Data structure design	20.2%	Medium
+212	Word Search II	20.4%	Hard
+140	Word Break II	20.5%	Hard
+10	Regular Expression Matching	22.6%	Hard
+79	Word Search	23.7%	Medium
+93	Restore IP Addresses	24.3%	Medium
+60	Permutation Sequence	25.8%	Medium
+37	Sudoku Solver	26.0%	Hard
+51	N-Queens	26.9%	Hard
+131	Palindrome Partitioning	28.4%	Medium
+40	Combination Sum II	28.7%	Medium
+47	Permutations II	28.9%	Medium
+267	Palindrome Permutation II 	29.2%	Medium
+17	Letter Combinations of a Phone Number	29.8%	Medium
+90	Subsets II	31.6%	Medium
+39	Combination Sum	32.3%	Medium
+78	Subsets	32.9%	Medium
+77	Combinations	35.7%	Medium
+291	Word Pattern II 	35.7%	Hard
+254	Factor Combinations 	36.4%	Medium
+351	Android Unlock Patterns 	36.9%	Medium
+46	Permutations	37.2%	Medium
+89	Gray Code	37.5%	Medium
+216	Combination Sum III	37.9%	Medium
+22	Generate Parentheses	38.6%	Medium
+52	N-Queens II	40.5%	Hard
+320	Generalized Abbreviation 	41.5%	Medium
+294	Flip Game II 	42.4%	Medium
+357	Count Numbers with Unique Digits	42.7%	Medium
