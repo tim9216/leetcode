@@ -1,0 +1,12 @@
+44	Wildcard Matching	18.0%	Hard
+321	Create Maximum Number	22.2%	Hard
+135	Candy	23.0%	Hard
+45	Jump Game II	25.6%	Hard
+316	Remove Duplicate Letters	26.4%	Hard
+134	Gas Station	27.8%	Medium
+358	Rearrange String k Distance Apart 	28.2%	Hard
+55	Jump Game	28.7%	Medium
+330	Patching Array	30.2%	Hard
+376	Wiggle Subsequence	35.6%	Medium
+253	Meeting Rooms II 	35.8%	Medium
+122	Best Time to Buy and Sell Stock II	43.5%	Medium
