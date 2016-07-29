@@ -1,0 +1,47 @@
+# problems to be solved using tree(s)
+# ordered by acceptance rate from low to high
+
+98	Validate Binary Search Tree	21.4%	Medium
+124	Binary Tree Maximum Path Sum	23.9%	Hard
+222	Count Complete Tree Nodes	26.0%	Medium
+333	Largest BST Subtree 	27.3%	Medium
+99	Recover Binary Search Tree	27.3%	Hard
+236	Lowest Common Ancestor of a Binary Tree	28.8%	Medium
+297	Serialize and Deserialize Binary Tree	29.0%	Hard
+113	Path Sum II	29.3%	Medium
+95	Unique Binary Search Trees II	29.5%	Medium
+105	Construct Binary Tree from Preorder and Inorder Traversal	29.5%	Medium
+103	Binary Tree Zigzag Level Order Traversal	29.8%	Medium
+106	Construct Binary Tree from Inorder and Postorder Traversal	29.8%	Medium
+257	Binary Tree Paths	30.6%	Easy
+111	Minimum Depth of Binary Tree	31.2%	Easy
+112	Path Sum	31.9%	Easy
+114	Flatten Binary Tree to Linked List	31.9%	Medium
+117	Populating Next Right Pointers in Each Node II	33.0%	Hard
+129	Sum Root to Leaf Numbers	33.6%	Medium
+102	Binary Tree Level Order Traversal	34.1%	Easy
+110	Balanced Binary Tree	34.8%	Easy
+101	Symmetric Tree	34.9%	Easy
+272	Closest Binary Search Tree Value II 	35.1%	Hard
+107	Binary Tree Level Order Traversal II	35.2%	Easy
+270	Closest Binary Search Tree Value 	35.4%	Easy
+285	Inorder Successor in BST 	36.0%	Medium
+173	Binary Search Tree Iterator	36.1%	Medium
+199	Binary Tree Right Side View	36.2%	Medium
+145	Binary Tree Postorder Traversal	36.5%	Hard
+116	Populating Next Right Pointers in Each Node	36.6%	Medium
+235	Lowest Common Ancestor of a Binary Search Tree	37.5%	Easy
+255	Verify Preorder Sequence in Binary Search Tree 	37.6%	Medium
+298	Binary Tree Longest Consecutive Sequence 	37.6%	Medium
+250	Count Univalue Subtrees 	38.0%	Medium
+96	Unique Binary Search Trees	38.3%	Medium
+108	Convert Sorted Array to Binary Search Tree	38.4%	Medium
+337	House Robber III	38.8%	Medium
+230	Kth Smallest Element in a BST	39.3%	Medium
+156	Binary Tree Upside Down 	39.4%	Medium
+94	Binary Tree Inorder Traversal	41.0%	Medium
+144	Binary Tree Preorder Traversal	41.0%	Medium
+100	Same Tree	44.0%	Easy
+226	Invert Binary Tree	47.3%	Easy
+104	Maximum Depth of Binary Tree	48.9%	Easy
+366	Find Leaves of Binary Tree 	53.3%	Medium
