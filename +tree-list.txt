@@ -1,6 +1,6 @@
 # problems to be solved using tree(s)
 # ordered by acceptance rate from low to high
-
+ 
 98	Validate Binary Search Tree	21.4%	Medium
 124	Binary Tree Maximum Path Sum	23.9%	Hard
 222	Count Complete Tree Nodes	26.0%	Medium
